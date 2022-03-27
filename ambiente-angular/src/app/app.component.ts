@@ -11,6 +11,11 @@ export class AppComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    let interval = setInterval(() => {
+      this.count++;
+      if ((this.count = 10)) {
+        clearInterval(interval);
+      }
+    }, 1000);
   }
 }
