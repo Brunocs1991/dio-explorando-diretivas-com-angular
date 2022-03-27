@@ -10,7 +10,7 @@ export class MarcaTextoDirective implements OnInit {
   constructor(private elemento: ElementRef) {}
 
   ngOnInit(): void {
-    this.mudarFundo;
+    this.mudarFundo();
   }
 
   private mudarFundo(cor: string = 'yellow') {
